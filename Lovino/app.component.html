@@ -1,0 +1,54 @@
+<div style="text-align:center">
+  <style>
+  body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  }
+
+  div {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+  color: #333;
+  font-size: 28px;
+  }
+
+  nav {
+  margin-top: 20px;
+  }
+
+  a {
+  text-decoration: none;
+  color: #555;
+  margin: 0 10px;
+  font-size: 16px;
+  }
+
+  a:hover {
+  color: #1345dc;
+  }
+
+  .active {
+  color: #52f140;
+  font-weight: bold;
+  }
+  </style>
+<div style="text-align:center">
+  <h2>This an {{title}}
+  </h2>
+  <nav>
+    <a routerLink="home" routerLinkActivate="active">Home</a>  |
+    <a routerLink="about">About</a>  |
+    <a routerLink="dashboard">Dashboard</a>  |
+    <a routerLink="data-binding">DataBinding</a>  |
+    <a routerLink="directives">Directives</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
